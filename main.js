@@ -2289,7 +2289,7 @@ const byDate  = {};   // "2024-03-15" → count
 const byHour  = Array(24).fill(0);   // 0-23 → count
 const byDayHour = {};  // "Mon|14" → count
 const DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-
+////////////////////////////////////////////////////////////////////////////////////
 entries.forEach(({ ts }) => {
   const dateKey = ts.toISOString().slice(0, 10);
   byDate[dateKey] = (byDate[dateKey] || 0) + 1;

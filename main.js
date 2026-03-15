@@ -2304,7 +2304,7 @@ const peakHour = byHour.indexOf(Math.max(...byHour));
 const peakDay  = DAYS[Object.entries(
     Object.fromEntries(DAYS.map(d=>([d, DAYS.filter(dd=>dd===d).reduce(
       (s,_,i)=>s+Array.from({length:24},(_,h)=>byDayHour[d+'|'+h]||0).reduce((a,b)=>a+b,0), 0)])))
-  ).sort((a,b)=>b[1]-a[1])[0]?.at(0)) || 'Unknown'];
+  ).sort((a,b)=>b[1]-a[1])[0]?.at(0) || 'Unknown'];
 
 // day total for day-label
 const dayTotals = {};

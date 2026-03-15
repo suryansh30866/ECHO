@@ -4,7 +4,7 @@
 
 // OpenRouter keys (primary → backups)
 const _OR_KEYS = [
-  "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",
+  "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",
   "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",
 ];
 let _orKeyIdx = 0;
